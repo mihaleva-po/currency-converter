@@ -1,26 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Converter from "./features/Converter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div style={{display: 'flex', alignItems: 'center', height: '100vh', width: '100vw'}}>
+            <Converter/>
+        </div>
+    );
+};
 
 export default App;
